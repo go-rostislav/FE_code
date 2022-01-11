@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-scale=0.5">
+   <link rel="stylesheet" href="css/rebot.scss">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   <title>FE_Honcharov</title>
+</head>
+
+<body>
+   <header class="">
+      <div class="container d-flex justify-content-between align-items-center">
+         <div class="logo">
+            <img src="img/Vector Smart Object.png" alt="">
+         </div>
+         <div class="d1">
+            <form>
+               <input type="text" placeholder="Search">
+               <button type="submit"></button>
+            </form>
+         </div>
+      </div>
+      <div class="stiky-top d-md-block d-lg-none container">
+         <div class="collapse" id="navbarToggleExternalContent">
+            <div class="b_color">
+               <a href="#" class="d-block nav_style a_color">home</a>
+               <a href="#" class="d-block nav_style a_color">services</a>
+               <a href="#" class="d-block nav_style a_color">portfolio</a>
+               <a href="#" class="d-block nav_style a_color">gallery</a>
+               <a href="#" class="d-block nav_style a_color">help & faq</a>
+               <a href="#" class="d-block nav_style a_color">about</a>
+               <a href="#" class="d-block nav_style a_color">contact</a>
+            </div>
+         </div>
+         <nav class="navbar navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+               data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+               aria-expanded="false" aria-label="Переключатель навигации">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+         </nav>
+      </div>
+   </header>
+   <section class="container-fluid backgroun_color sticky-top d-none d-lg-block">
+      <nav class="container navbar">
+         <a href="#" class="d-block nav_style space_left">home</a>
+         <a href="#" class="d-block nav_style">services</a>
+         <a href="#" class="d-block nav_style">portfolio</a>
+         <a href="#" class="d-block nav_style">gallery</a>
+         <a href="#" class="d-block nav_style">help & faq</a>
+         <a href="#" class="d-block nav_style">about</a>
+         <a href="#" class="d-block nav_style space_right">contact</a>
+      </nav>
+   </section>
+   <section class="container">
+      <h2 class="text-center">Buttons</h2>
+      <div class="align-content-center text-center middle__buttons">
+         <button type="btn" class="btn btn-primary font">Primary</button>
+         <button type="btn" class="btn btn-outline-primary font">Default</button>
+         <button type="btn" class="btn btn-success font">Success</button>
+         <button type="btn" class="btn btn-info font">Info</button>
+         <button type="btn" class="btn btn-warning font">Warning</button>
+         <button type="btn" class="btn btn-danger font">Danger</button>
+      </div>
+   </section>
+   <section class="container small_container">
+      <h2 class="text-center">Inputs</h2>
+      <div class="row__md d-flex justify-content-around">
+         <div class="d-flex flex-column margin__bottom">
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" checked id="defaultCheck1">
+               <label class="form-check-label" for="defaultCheck1">
+                  Checkbox active
+               </label>
+            </div>
+            <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+               <label class="form-check-label" for="defaultCheck2">
+                  Checkbox
+               </label>
+            </div>
+         </div>
+         <div class="d-flex flex-column margin__bottom">
+            <div class="form-check">
+               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                  checked>
+               <label class="form-check-label" for="exampleRadios1">
+                  Radio Active
+               </label>
+            </div>
+            <div class="form-check">
+               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+               <label class="form-check-label" for="exampleRadios2">
+                  Radio
+               </label>
+            </div>
+         </div>
+
+         <div class="d-flex flex-column margin__bottom">
+            <div class="custom-control custom-switch">
+               <input type="checkbox" class="custom-control-input" id="customSwitch1">
+               <label class="custom-control-label" for="customSwitch1">Switcher ON</label>
+            </div>
+            <div class="custom-control custom-switch">
+               <input type="checkbox" class="custom-control-input" id="customSwitch2">
+               <label class="custom-control-label" for="customSwitch2">Switcher OFF</label>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="container">
+      <div>
+         <h2 class="text-center">Star rating </h2>
+         <div class="rating">
+            <p class="style_text">Show rating</p>
+            <input type="radio" name="rating" value="5" id="5">
+            <label for="5">☆</label>
+            <input type="radio" name="rating" value="4" id="4">
+            <label for="4">☆</label>
+            <input type="radio" name="rating" value="3" id="3">
+            <label for="3">☆</label>
+            <input type="radio" name="rating" value="2" id="2">
+            <label for="2">☆</label>
+            <input type="radio" name="rating" value="1" id="1">
+            <label for="1">☆</label>
+         </div>
+      </div>
+      <div class="rating">
+         <p class="style_text_show">Check rating</p>
+         <input type="radio" name="rating" value="10" id="10">
+         <label for="10">☆</label>
+         <input type="radio" name="rating" value="9" id="9"><label for="9">☆</label>
+         <input type="radio" name="rating" value="8" id="8"><label for="8">☆</label>
+         <input type="radio" name="rating" value="7" id="7">
+         <label for="7">☆</label>
+         <input type="radio" name="rating" value="6" id="6">
+         <label for="6">☆</label>
+      </div>
+   </section>
+   <section class="container">
+      <h2 class="text-center">Carousel</h2>
+      <div class="d-flex justify-content-center">
+         <main role="main">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner space_carousel container">
+                  <div class="carousel-item active" data-hash="zero">
+                     <img src="img/AbominableChewbacca-SWT.jpg" alt="">
+                     <div class="carousel-caption text_color">
+                        <p class="text_carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit.illo
+                           magnimolestiascumque pariatur quisquam?</p>
+                        <h3>Chewbacca</h3>
+                        <p>Jule 2017</p>
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-hash="one">
+                     <img src="img/AbominableChewbacca-SWT.jpg" alt="">
+                     <div class="carousel-caption text_color">
+                        <p class="text_carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit.illo
+                           magnimolestiascumque pariatur quisquam?</p>
+                        <h3>Chewbacca</h3>
+                        <p>Jule 2017</p>
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-hash="two">
+                     <img src="img/AbominableChewbacca-SWT.jpg" alt="">
+                     <div class="carousel-caption text_color">
+                        <p class="text_carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit.illo
+                           magnimolestiascumque pariatur quisquam?</p>
+                        <h3>Chewbacca</h3>
+                        <p>Jule 2017</p>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev out .d-none .d-sm-block" href="#myCarousel" role="button"
+                  data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next  out .d-none .d-sm-block" href="#myCarousel" role="button"
+                  data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+               </a>
+            </div>
+            <div class="container marketing">
+               <div class="d-flex flex-row justify-content-center">
+                  <div class="style_icon">
+                     <a href="#zero"><img src="img/SmallAbominableChewbacca-SWT.jpg" alt=""></a>
+                  </div>
+                  <div class="style_icon">
+                     <a href="#one"><img src="img/maxresdefault-0658-CE15-B370.jpg" alt=""></a>
+                  </div>
+                  <div class="style_icon">
+                     <a href="#two"><img src="img/Yoda_SWSB.jpg" alt=""></a>
+                  </div>
+                  <div class="style_icon">
+                     <a href="#three"><img src="img/imageload.jpg" alt=""></a>
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+      </div>
+   </section>
+   <footer class="container-fluid d-flex justify-content-around color_footer fixed-bottom">
+      <div class="row">
+         <div class="container-sm d-flex justify-content-between">
+            <nav class="d-flex flex-column show_block xs-col-12">
+               <h3><a href="#" class="footer_style">Follow us</a></h3>
+               <ul class="sprites d-flex justify-content-between">
+                  <li><a href="https://www.facebook.com"></a></li>
+                  <li><a href="https://twitter.com"></a></li>
+                  <li><a href="https://ru.linkedin.com"></a></li>
+                  <li><a href="https://www.pinterest.ru"></a></li>
+               </ul>
+            </nav>
+         </div>
+         <nav class="d-flex flex-column text_footer xs-col-12 nav__hide">
+            <h3><a href="#" class="footer_style">Shop</a></h3>
+            <a href="#">Browse By Hollidays</a>
+            <a href="#">Browse By Brand</a>
+            <a href="#">Gift of the Month Clubs</a>
+            <a href="#">Customized Bottles</a>
+            <a href="#">Corporates Gifts</a>
+         </nav>
+         <nav class="d-flex flex-column text_footer xs-col-12 nav__hide">
+            <h3><a href="#" class="footer_style">About</a></h3>
+            <a href="#">About Spirited Gifts</a>
+            <a href="#">Spirited Gifts</a>
+            <a href="#">Read our Blog</a>
+            <a href="#">About our Selection</a>
+            <a href="#">Shipping & Returns</a>
+         </nav>
+         <nav class="d-flex flex-column text_footer xs-col-12 nav__hide">
+            <h3><a href="#" class="footer_style">More</a></h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Retailer Network</a>
+            <a href="#">Help and FAQs</a>
+            <a href="#">Scholarship</a>
+            <a href="#">Contact us</a>
+         </nav>
+         <nav class="d-flex flex-column hide">
+            <h3><a href="#" class="footer_style h_style">Follow us</a></h3>
+            <ul class="sprites d-flex justify-content-between">
+               <li><a href="https://www.facebook.com"></a></li>
+               <li><a href="https://twitter.com"></a></li>
+               <li><a href="https://ru.linkedin.com"></a></li>
+               <li><a href="https://www.pinterest.ru"></a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="accordion" id="accordionExample">
+         <div class="card">
+            <div class="card-header" id="headingOne">
+               <h2 class="mb-0">
+                  <button
+                     class="d-flex justify-content-between text-decoration-none btn btn-link btn-block text-left collapsed"
+                     type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                     aria-controls="collapseOne">
+                     <h3><a href="#" class="footer_style">Shop</a></h3>
+                     <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+               </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+               <div class="card-body">
+                  <nav class="d-flex flex-column text_footer xs-col-12">
+                     <a href="#">Browse By Hollidays</a>
+                     <a href="#">Browse By Brand</a>
+                     <a href="#">Gift of the Month Clubs</a>
+                     <a href="#">Customized Bottles</a>
+                     <a href="#">Corporates Gifts</a>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-header" id="headingTwo">
+               <h2 class="mb-0">
+                  <button
+                     class="d-flex justify-content-between text-decoration-none btn btn-link btn-block text-left collapsed"
+                     type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                     aria-controls="collapseTwo">
+                     <h3><a href="#" class="footer_style">About</a></h3>
+                     <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+               </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+               <div class="card-body">
+                  <nav class="d-flex flex-column text_footer xs-col-12">
+                     <a href="#">About Spirited Gifts</a>
+                     <a href="#">Spirited Gifts</a>
+                     <a href="#">Read our Blog</a>
+                     <a href="#">About our Selection</a>
+                     <a href="#">Shipping & Returns</a>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-header" id="headingThree">
+               <h2 class="mb-0">
+                  <button
+                     class="d-flex justify-content-between text-decoration-none btn btn-link btn-block text-left collapsed"
+                     type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                     aria-controls="collapseThree">
+                     <h3><a href="#" class="footer_style">More</a></h3>
+                     <i class="fa fa-angle-down" aria-hidden="true"></i>
+                     <!-- <i class="fa fa-angle-up" aria-hidden="true"></i> -->
+                  </button>
+               </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+               <div class="card-body">
+                  <nav class="d-flex flex-column text_footer xs-col-12">
+                     <a href="#">Privacy Policy</a>
+                     <a href="#">Retailer Network</a>
+                     <a href="#">Help and FAQs</a>
+                     <a href="#">Scholarship</a>
+                     <a href="#">Contact us</a>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
